@@ -70,11 +70,6 @@ body {
     border-radius: 5px;
   }
   
-  .menu a:hover {
-    background-color: #f4f4f4;
-  }
-  
-  /* Responsivo para dispositivos móveis */
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
