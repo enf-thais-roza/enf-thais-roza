@@ -1,0 +1,473 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F7;
+    margin: 0;
+    padding: 0;
+}
+
+.new {
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+
+.new-subtitle {
+  color: #F5F5F7;
+  font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+  .new-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+
+.name {
+  color:#e3354f;
+}
+
+.name-nav {
+  color:#e3354f;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    background-color: #D8D5E8;
+  }
+  
+  .logo img {
+    display: flex;
+    width: 150px; /* ajuste o tamanho da imagem conforme necessário */
+    border-radius: 10px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color:#e3354f;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 5px 10px;
+    border: solid 1px;
+    border-radius: 5px;
+  }
+  
+  .menu a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Responsivo para dispositivos móveis */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center; /* Centraliza todo o conteúdo na barra de navegação */
+      margin-right: -1px;
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Espaço entre a logo e os botões */
+    }
+  
+    .menu {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 10px;
+    }
+    .name-nav {
+      color:#e3354f;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+
+.bio-container {
+    text-align: center; /* Centraliza o nav */
+    display: flex; /* Ativa o flexbox para layout */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: space-between; /* Espaço entre os itens */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    height: 456px;
+}  
+
+.bio-title {
+    display: flex; /* Faz os itens da lista ficarem em linha */
+    justify-content: start; /* Centraliza os itens da lista */
+    width: 100%; /* Faz o nav ocupar toda a largura */
+    margin-right: 20px; /* Espaçamento à direita */
+}
+
+.bio-description{
+    font-size: 24px;
+   margin-right: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 428px) {
+    .bio-container {
+        flex-direction: column; /* Empilha os itens em coluna em telas pequenas */
+        align-items: center; /* Alinha os itens à esquerda */
+        margin-bottom: 50px;
+    }
+
+    .bio-title {
+        justify-content: center;
+        text-align: center; /* Centraliza o texto no nav */
+    }
+   .bio-description{
+        font-size: 20px; /* Ajusta o tamanho da fonte em dispositivos menores */
+        flex-direction: column;
+        align-items: center;
+        margin-top: -14px;
+}
+}
+
+.avatar {
+    width: 700px;
+    height: 430px;
+   border-radius: 80px;
+    display: flex;
+}
+
+@media (max-width: 835px) {
+  .avatar {
+    display: flex;
+    margin-bottom: 30px;
+   width: 320px;
+   order: -1;
+    border-radius: 20px;
+  }
+  .bio-description{
+    font-size: 20px; /* Ajusta o tamanho da fonte em dispositivos menores */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+.card-button1 {
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px; /* Espaçamento entre os cards */
+    flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border: #e3354f solid 2px;
+    background-image: url(./pré-nataltransp.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.card-button2 {
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px; /* Espaçamento entre os cards */
+    flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border: #e3354f solid 2px;
+    background-image: url(./assitenciatransp.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.card-button3{
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px; /* Espaçamento entre os cards */
+    flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    border: #e3354f solid 2px;
+    background-image: url(./casaltransp.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.card-button4{
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* Espaçamento entre os cards */
+  flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  border: #e3354f solid 2px;
+  background-image: url(./Amamentaçãotransp.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.card-button5{
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* Espaçamento entre os cards */
+  flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  border: #e3354f solid 2px;
+  background-image: url(./consultatransp.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.card-button6{
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* Espaçamento entre os cards */
+  flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  border: #e3354f solid 2px;
+  background-image: url(./brinquinhotransp.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.card-button7{
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* Espaçamento entre os cards */
+  flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  border: #e3354f solid 2px;
+  background-image: url(./acupunturatransp.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.card-button8{
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* Espaçamento entre os cards */
+  flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  border: #e3354f solid 2px;
+  background-image: url(./laserterapiatransp.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.card-button9{
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* Espaçamento entre os cards */
+  flex: 1 1 200px; /* Permite que os cards cresçam e encolham com um tamanho base de 200px */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  border: #e3354f solid 2px;
+  background-image: url(./medicaçãotransp.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+/* Estilo do contêiner dos cards */
+.cards-container {
+    display:flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem em uma nova linha se não houver espaço suficiente */
+    justify-content: center; /* Centraliza os cards */
+ margin: 30px;
+}
+
+/* Layout responsivo para dispositivos móveis */
+
+
+@media (max-width: 428px) {
+  .container {
+    display: flex; /* Usa Flexbox para alinhamento */
+  flex-wrap: wrap; /* Permite que os cards quebrem em uma nova linha se não houver espaço suficiente */
+  justify-content: center; /* Centraliza os cards */
+ margin-top: 80px;
+padding: 25px;
+  }
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+
+ .wrapper .icon { 
+    position: relative;
+    background: #ffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    Font-size: 14px;
+    background: #ffff;
+    color: #ffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(o,0,O,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s
+    cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  
+    .wrapper .tooltip::before {
+    position: absolute;
+    content:"";
+    height:8px;
+    width:8px;
+    background: #ffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s;
+  }
+
+  .wrapper .icon:hover.tooltip {
+    top:-45px;
+    opacity:1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+    .wrapper .icon:hover span,
+    .wrapper .icon:hover .tooltip {
+    text-shadow: 0px-1px Opx rgba(0,0,0,0.1);
+   }
+
+    .instagram {
+    color:#e4405f;
+   }
+
+    .Whatsapp {
+        color: green;
+    }
+   
+  
+.footer {
+    background-color: #D8D5E8;
+    color: #e3354f; /* Cor do texto */
+  padding: 1px;
+    font-family: Arial, sans-serif; /* Fonte */
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex; /* Layout flexível */
+    justify-content: space-around; /* Espaço entre as seções */
+    flex-wrap: wrap; /* Permite que as seções se movam para a linha de baixo se não houver espaço */
+    max-width: 1200px; /* Largura máxima do conteúdo do footer */
+    margin: 0 auto; /* Centraliza o conteúdo do footer */
+}
+
+.footer-section {
+    flex: 1; /* Permite que cada seção tenha o mesmo tamanho */
+    margin: 10px; /* Espaçamento entre as seções */
+    min-width: 200px; /* Largura mínima para as seções */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px; /* Margem abaixo do título */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding da lista */
+}
+
+.footer-section a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Sublinha links ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 20px; /* Espaço acima da seção inferior */
+    font-size: 0.9em; /* Tamanho da fonte menor */
+}
+
+/* Estilos responsivos */
+@media (max-width: 428px) {
+    .footer-container {
+        flex-direction: column; /* Alinha as seções verticalmente */
+        align-items: center; /* Alinha as seções ao centro */
+    }
+
+    .footer-section {
+        text-align: center; /* Centraliza o texto nas seções */
+    }
+
+    .subtitle-footer {
+      font-size: 34px;
+      font-weight: 700;
+    }
+}
+
+.subtitle-footer {
+  font-size: 16px;
+  font-weight: 550;
+}
