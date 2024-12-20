@@ -4,14 +4,18 @@
  }
  
  body {
-    background-color: #D8D5E8;
+     background-color: #EBE9F4;
  }
  
+li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
  .title {
      align-items: center;
      text-align: center;
      justify-content: center;
-     color: #ed2c4f; 
+     color: #FE4DA0; 
  }
  
  .image-container img {
@@ -39,7 +43,7 @@
      text-align: center;
      font-size: 24px;
      margin-top: 20px;
-     color: crimson;
+     color: #FE4DA0;
  }
  
  .listen {
